@@ -12,6 +12,13 @@
     z-index: -1;
   }
 
+  .contenedor {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
 header h1 {
     margin-left: 20px;
 }
@@ -30,17 +37,16 @@ header {
 }
 
 .uno {
+  width: 100%;
     border-radius: 100px;
     background-color: #303030;
     color: white;
     display: flex;
-  justify-content: center;
-  margin-left: 20rem;
-  margin-right: 20rem;
+  align-items: center;
 }
 
 .uno h1 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .presentacion {
@@ -101,6 +107,11 @@ header {
   margin-top: 2rem;
 }
 
+.Conjunto-Playlist h2 {
+  margin-top: 3rem;
+  text-align: center;
+}
+
 #contenedor_principal_playlist {
   width:1024px;
   height:auto;
@@ -150,6 +161,7 @@ header {
       height:auto;
       position:relative;
       margin:auto;
+      margin-top: 2rem;
       }
 
       .contenedor_imagen_texto_llenardatos2 {
@@ -187,4 +199,32 @@ header {
         color: white;
 
     }
+
+    @media screen and (max-width: 800px) {
+      .uno {
+        width: 100%;
+      }
+
+      #contenedor_principal_playlist {
+        width: 100%;
+      }
+
+      #contenedor_principal_llenardatos1 {
+        width: 100%;
+      }
+
+      #contenedor_principal_llenardatos2 {
+        width: 100%;
+      }
+
+
+    }
+
+    @media screen and (max-width: 400px) {
+      .contenedor {
+        width: 100%;
+        display: none;
+      }
+    }
+
 
